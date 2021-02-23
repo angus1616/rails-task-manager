@@ -1,0 +1,16 @@
+<div class="container-one">
+<%= form_for @task do |f| %>
+<div class="card card-edit" style="width: 18rem;">
+<div class="mb-3">
+<h5 class="card-title"><%= f.label :title, class: "form-label" %></h5>
+<%= f.text_field :title, class: "form-control" %>
+</div>
+<div class="mb-3">
+ <p class="card-text"><%= f.label :details, class: "form-label" %></p>
+  <%= f.text_field :details, class: "form-control" %>
+</div>
+ <%= f.submit %>
+</div>
+<% end %>
+</div>
+
